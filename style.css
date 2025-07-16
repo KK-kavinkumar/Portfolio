@@ -1,0 +1,155 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #1e1e2f, #27293d);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.contact {
+  margin-top: 15px;
+}
+
+.contact a {
+  color: #80d0ff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #00b7ff;
+}
+
+/* MAIN CONTAINER */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* SECTION HEADINGS */
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #00b7ff;
+  margin-bottom: 20px;
+  border-left: 5px solid #00b7ff;
+  padding-left: 10px;
+  animation: slideIn 0.8s ease forwards;
+}
+
+/* PROJECT CARDS */
+.card {
+  background: #1f1f2e;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 183, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #00b7ff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 183, 255, 0.25);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card p {
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.card a {
+  color: #00b7ff;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px dashed #00b7ff;
+  transition: color 0.3s ease;
+}
+
+.card a:hover {
+  color: #ffffff;
+}
+
+/* LIST STYLING */
+ul {
+  list-style-type: square;
+  padding-left: 25px;
+  color: #ccc;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #1a1a1a;
+  padding: 25px;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateX(-30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
